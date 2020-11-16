@@ -1,0 +1,7 @@
+-r pip-tools.txt
+-r requirements.txt
+
+autopep8
+pylint
+jupyterlab
+ipywidgets
