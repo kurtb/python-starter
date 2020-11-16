@@ -33,6 +33,9 @@ $(VENV):
 	python3 -m venv $@
 	. $(VENV)/bin/activate; pip install -U pip wheel
 
+clean:
+	rm -rf $(VENV)
+
 requirements: # Install requirements
 	pip install -r ./requirements/dev.txt
 	pip install -e .
